@@ -1,0 +1,45 @@
+As per The Odin Project's Recipe Project:
+
+The git workflow goes something like this...
+
+Creating Repository
+1. On GitHub create a new repository
+2. Give your repository a name, check add README
+3. To get ready to clone repo to machine: click the Green "Code" button
+ then select the SSH option and copy the line below it
+4. On your local machine create a directory to clone your repo to
+5. Use git clone followed the the link from step 3
+6. Should be set; to verify its all good enter git remote -v
+
+Use the Git workflow:
+1. Create a file in the cloned repo
+2. git status to check staging
+3. Type git add [file you made in step 1] to add it to the staging area
+(staging area is like a waiting room for changes until committed)
+4. Check again with git status
+5. Type git commit -m "Add [file name]"
+6. Type git log to check for an entry about line 5
+7. Use git add . to add all files in the current directory to staging area
+8. Finally lets commit them all with:
+git commit -m "message"
+9. After things are committed, they need to be uploaded to the repo
+To do this type: git push (specfically git push origin main since there is no branch other than main at this time)
+
+Cheatsheet
+
+Commands related to a remote repo:
+    git clone git@github.com:USER-NAME/REPOSITORY-NAME.git
+    git push
+    git push origin main
+
+Commands relaed to the workflow:
+    git add .
+    git commit -m "A message describing what you have done to make this snapshot different"
+
+Commands related to checking status or log history:
+    git status
+    git log
+
+Basic syntax:
+    program | action | destination
+
